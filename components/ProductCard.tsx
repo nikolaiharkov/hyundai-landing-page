@@ -2,6 +2,7 @@
 
 import { SITE_CONFIG } from "@/lib/config";
 import { Product } from "@/lib/products";
+import Image from "next/image";
 
 interface ProductCardProps {
   product: Product;
@@ -10,17 +11,16 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group bg-white rounded-[2.5rem] border border-slate-100 overflow-hidden shadow-premium hover:shadow-2xl transition-all duration-700 flex flex-col">
-      {/* Container Visual Produk */}
+      {/* Container Visual Produk Optimized */}
       <div className="relative aspect-[4/3] bg-slate-50/50 flex items-center justify-center p-8 overflow-hidden">
-        <img
+        <Image
           src={product.image}
           alt={product.name}
-          className="w-full h-auto object-contain transform group-hover:scale-110 transition-transform duration-1000 ease-out"
-          onError={(e) => {
-            e.currentTarget.src = "https://hyundaiofficialjakarta.id/wp-content/uploads/2023/06/hyundai-stargazer-prime-creamy-white-pearl__1_-removebg-preview.png";
-          }}
+          fill
+          className="object-contain p-8 transform group-hover:scale-110 transition-transform duration-1000 ease-out"
+          sizes="(max-width: 768px) 100vw, 400px"
         />
-        {/* Label Kategori - Kontras Tinggi */}
+        {/* Label Kategori */}
         <div className="absolute top-6 left-6">
           <span className="bg-hyundai-dark text-white text-[9px] font-black px-3.5 py-1.5 rounded-full tracking-[0.2em] uppercase shadow-lg">
             {product.category}
@@ -42,7 +42,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
         </div>
 
-        {/* Tombol Aksi - Diarahkan ke Link Tracking Analytics */}
+        {/* Tombol Aksi */}
         <div className="mt-auto">
           <a
             href={SITE_CONFIG.WHATSAPP_LINK}

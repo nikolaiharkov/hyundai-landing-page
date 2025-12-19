@@ -1,35 +1,40 @@
 "use client";
 
 import { SITE_CONFIG } from "@/lib/config";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative w-full bg-white overflow-hidden border-b border-slate-100">
       <div className="flex flex-col items-center pt-16 pb-20 px-8 text-center">
 
-        {/* Logo - Menghapus filter invert agar warna asli logo terlihat */}
-        <div className="mb-14">
-          <img
+        {/* Logo Hyundai Optimized */}
+        <div className="mb-14 relative h-14 w-48">
+          <Image
             src={SITE_CONFIG.LOGO_PATH}
             alt="Hyundai Logo"
-            className="h-14 md:h-16 w-auto object-contain"
-            style={{ minHeight: '56px' }}
+            fill
+            className="object-contain"
+            priority
           />
         </div>
 
-        {/* Profil Photo */}
+        {/* Profil Photo Optimized */}
         <div className="relative mb-8">
           <div className="absolute inset-0 rounded-full border-2 border-hyundai-blue/20 animate-pulse scale-110"></div>
           <div className="relative w-40 h-40 rounded-full border-4 border-slate-50 shadow-xl overflow-hidden bg-slate-100 ring-4 ring-slate-50">
-            <img
+            <Image
               src={SITE_CONFIG.SALES_PHOTO_PATH}
               alt={SITE_CONFIG.SALES_NAME}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="160px"
+              priority
             />
           </div>
         </div>
 
-        {/* Identitas - Warna diubah ke Hyundai Dark Blue (#002c5f) agar terbaca jelas */}
+        {/* Identitas */}
         <div className="space-y-3">
           <h1 className="text-3xl font-black font-heading text-[#002c5f] tracking-tight uppercase">
             {SITE_CONFIG.SALES_NAME}
@@ -39,7 +44,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Headline & Subhead - Warna gelap untuk kontras maksimal */}
+        {/* Headline & Subhead */}
         <div className="mt-14 w-full max-w-[320px]">
           <h2 className="text-[#002c5f] text-2xl font-black font-heading leading-tight mb-4 tracking-tighter">
             {SITE_CONFIG.HERO_HEADLINE}

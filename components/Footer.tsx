@@ -1,6 +1,7 @@
 "use client";
 
 import { SITE_CONFIG } from "@/lib/config";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,11 +9,13 @@ export default function Footer() {
   return (
     <footer className="bg-slate-50 border-t border-slate-100 pt-16 pb-28 px-8">
       <div className="flex flex-col items-center text-center">
-        <div className="mb-10 opacity-80">
-           <img
+        {/* Logo Footer Optimized */}
+        <div className="mb-10 opacity-80 relative h-10 w-32">
+           <Image
             src={SITE_CONFIG.LOGO_PATH}
             alt="Hyundai Logo"
-            className="h-10 w-auto object-contain mx-auto"
+            fill
+            className="object-contain"
           />
         </div>
 
@@ -25,7 +28,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Copyright & Developer Info */}
         <div className="space-y-3">
           <div className="text-[10px] text-slate-500 font-bold tracking-tight">
             &copy; {currentYear} <span className="text-[#002c5f]">{SITE_CONFIG.DOMAIN}</span>
