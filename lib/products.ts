@@ -50,7 +50,7 @@ export const PRODUCTS: Product[] = [
     name: "All New Creta",
     price: "Mulai Rp 352 Juta-an",
     category: "The New SUV",
-    image: "/foto-product/4725317f21_hyundai-creta-2022-color-451142-removebg-preview-1-6.png"
+    image: "/foto-product/d3dd0359ec_n-line-midnight-black-matte.png"
   },
   {
     id: "7",
@@ -62,16 +62,16 @@ export const PRODUCTS: Product[] = [
   {
     id: "8",
     name: "Santa Fe",
-    price: "Mulai Rp 625 Juta-an",
+    price: "Mulai Rp 724 Juta-an",
     category: "SUV",
-    image: "/foto-product/becfb4410e_001.-WHITE-PEARL-2-789x400.png"
+    image: "/foto-product/8a87ed505e_hyundai-santa-fe-color-361740-removebg-preview-1-1-725x400.png"
   },
   {
     id: "9",
     name: "All New Santa Fe",
-    price: "Mulai Rp 724 Juta-an",
+    price: "Mulai Rp 625 Juta-an",
     category: "Luxury SUV",
-    image: "/foto-product/8a87ed505e_hyundai-santa-fe-color-361740-removebg-preview-1-1-725x400.png"
+    image: "/foto-product/becfb4410e_001.-WHITE-PEARL-2-789x400.png"
   },
   {
     id: "10",
