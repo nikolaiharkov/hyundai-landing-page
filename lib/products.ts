@@ -50,38 +50,24 @@ export const PRODUCTS: Product[] = [
     name: "All New Creta",
     price: "Mulai Rp 352 Juta-an",
     category: "The New SUV",
-    image: "/foto-product/d3dd0359ec_n-line-midnight-black-matte.png"
+    image: "/foto-product/4725317f21_hyundai-creta-2022-color-451142-removebg-preview-1-6.png"
   },
   {
     id: "7",
-    name: "The New Tucson",
-    price: "Mulai Rp 652 Juta-an",
-    category: "Performance SUV",
-    image: "/foto-product/3c19fbf4c3_hyundai-santa-fe-color-361740-removebg-preview-1.png"
-  },
-  {
-    id: "8",
-    name: "Santa Fe",
+    name: "All New Santa Fe",
     price: "Mulai Rp 724 Juta-an",
-    category: "SUV",
+    category: "Luxury SUV",
     image: "/foto-product/8a87ed505e_hyundai-santa-fe-color-361740-removebg-preview-1-1-725x400.png"
   },
   {
-    id: "9",
-    name: "All New Santa Fe",
-    price: "Mulai Rp 625 Juta-an",
-    category: "Luxury SUV",
-    image: "/foto-product/becfb4410e_001.-WHITE-PEARL-2-789x400.png"
-  },
-  {
-    id: "10",
+    id: "8",
     name: "Palisade",
     price: "Mulai Rp 943 Juta-an",
     category: "Flagship SUV",
     image: "/foto-product/930a29c494_hyundai-palisade-color-141242-removebg-preview-1.png"
   },
   {
-    id: "11",
+    id: "9",
     name: "Palisade Hybrid",
     price: "Mulai Rp 1,1 Miliar-an",
     category: "Premium Hybrid SUV",
@@ -90,28 +76,21 @@ export const PRODUCTS: Product[] = [
 
   // SECTION: Electric Vehicles (EV)
   {
-    id: "12",
+    id: "10",
     name: "IONIQ 5",
     price: "Mulai Rp 713 Juta-an",
     category: "Electric",
     image: "/foto-product/18ce96208b_hyundai-ioniq-5-color-751349-removebg-preview-1.png"
   },
   {
-    id: "13",
-    name: "IONIQ 5 N",
-    price: "Mulai Rp 1,3 Miliar-an",
-    category: "High Performance EV",
-    image: "/foto-product/2edb6cd0f3_5JW5ZHZ7ZHH022_TWM_03-1.png"
-  },
-  {
-    id: "14",
+    id: "11",
     name: "IONIQ 6",
     price: "Mulai Rp 1,2 Miliar-an",
     category: "Electric Sedan",
     image: "/foto-product/ea3d291029_image-removebg-preview-2023-08-24T072824.224.png"
   },
   {
-    id: "15",
+    id: "12",
     name: "All New Kona Electric",
     price: "Mulai Rp 499 Juta-an",
     category: "Electric SUV",
@@ -120,7 +99,7 @@ export const PRODUCTS: Product[] = [
 
   // SECTION: Luxury Vans
   {
-    id: "16",
+    id: "13",
     name: "Staria",
     price: "Mulai Rp 934 Juta-an",
     category: "Luxury MPV",
