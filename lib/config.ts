@@ -7,6 +7,7 @@ export const SITE_CONFIG = {
   DOMAIN: "carihyundaijakarta.com",
   DEALER_NAME: "Hyundai Mobil Indonesia",
   LOGO_PATH: "/assets/logo/cropped-hyundai-logo.png",
+  ICON_PATH: "/assets/logo/favicon.ico",
 
   WHATSAPP_NUMBER: "628996936156",
   WHATSAPP_LINK: "https://analytics.harkovnet.biz.id/q/9GOZntPlf",

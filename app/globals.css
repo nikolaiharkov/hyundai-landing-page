@@ -1,34 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --hyundai-dark: #002c5f;
-  --hyundai-blue: #00aad2;
-  background-color: #ffffff;
-  color: #0f172a;
+@theme {
+  --color-hyundai-dark: #002c5f;
+  --color-hyundai-blue: #00aad2;
+  --font-heading: Montserrat, sans-serif;
 }
 
-/* Failsafe: Paksa Light Mode agar tidak hancur saat HP user pakai Dark Mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    background-color: #ffffff !important;
-    color: #0f172a !important;
-  }
-  body {
-    background-color: #f1f5f9 !important;
-  }
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 body {
-  background-color: #f1f5f9; /* Warna abu-abu di luar kontainer HP */
-  color: #0f172a;
-  -webkit-font-smoothing: antialiased;
+  @apply antialiased bg-slate-100;
 }
 
-/* Wrapper untuk efek bayangan kontainer mobile */
 .mobile-wrapper {
-  background-color: #ffffff !important;
   min-height: 100vh;
-  box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
 }
