@@ -57,14 +57,14 @@ export const PRODUCTS: Product[] = [
     name: "The New Tucson",
     price: "Mulai Rp 652 Juta-an",
     category: "Performance SUV",
-    image: "/foto-product/becfb4410e_001.-WHITE-PEARL-2-789x400.png"
+    image: "/foto-product/3c19fbf4c3_hyundai-santa-fe-color-361740-removebg-preview-1.png"
   },
   {
     id: "8",
     name: "Santa Fe",
     price: "Mulai Rp 625 Juta-an",
     category: "SUV",
-    image: "/foto-product/3c19fbf4c3_hyundai-santa-fe-color-361740-removebg-preview-1.png"
+    image: "/foto-product/becfb4410e_001.-WHITE-PEARL-2-789x400.png"
   },
   {
     id: "9",
@@ -115,7 +115,7 @@ export const PRODUCTS: Product[] = [
     name: "All New Kona Electric",
     price: "Mulai Rp 499 Juta-an",
     category: "Electric SUV",
-    image: "/foto-product/454026cba3_001.-WHITE-PEARL-1.png"
+    image: "/foto-product/899901d9d2_5JW5ZHZ7ZHH022_WR7_03-789x400.png"
   },
 
   // SECTION: Luxury Vans
